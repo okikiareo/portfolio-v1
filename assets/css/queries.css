@@ -70,9 +70,9 @@
         grid-template-columns: .25fr 3fr;
     }
 
-    .home_blob {
+    /* .home_blob {
         width: 180px;
-    }
+    } */
 
     /* SKILLS SECTION */
     .skills_title {
@@ -225,9 +225,9 @@
         column-gap: 2rem;
     }
 
-    .home_blob {
+    /* .home_blob {
         max-width: 250px;
-    }
+    } */
 
     .home_scroll {
         display: block;
