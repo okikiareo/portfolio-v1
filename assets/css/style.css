@@ -5,13 +5,15 @@
     --header-height: 3rem;
     /*========== Colors ==========*/
     /* Change favorite color */
-    --gray: #575A6B;
+    /* #b8b8b8 */
+    --gray: #9b9b9b;
+    --grayhover:#575A6B;
     /*Purple 250 - Green 142 - Blue 230 - Pink 340 - Brown 24*/
 
     /* HSL color mode */
     --first-color: var(--gray);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
-    --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+    --first-color-alt: var(--grayhover);
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
     --title-color: hsl(var(--hue-color), 8%, 15%);
     --text-color: hsl(var(--hue-color), 8%, 45%);
@@ -409,7 +411,7 @@ img {
 .pr-img {
   
     border-radius: 50%;
-    background: #b8b8b8;
+    background: var(--gray);
     object-fit: cover;
     
   } 
@@ -419,7 +421,48 @@ img {
   } 
 
 /*==================== ABOUT ====================*/
-.about_img {
+.about{
+    margin-top: 3rem;
+}
+.about h2{
+    margin-bottom: 1rem;
+}
+.about-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .middle{
+      display: flex;
+     /* media */
+      width: 60%;
+     
+  }
+  .vertical-line {
+    width: 10%;
+    margin-right: 20px;
+    border-right: 2px solid #383838;
+    opacity: .5;
+    border-right: 2px solid #383838;
+  }
+  .technologies {
+    width: 50%;
+    justify-content: space-between;
+    display: flex;
+  }
+  .tech {
+    display: flex;
+    align-items: center;
+  }
+  .arrow {
+    width: 20px;
+  }
+  .techs {
+    margin-top: 20px;
+  }
+  
+
+/* .about_img {
     width: 200px;
     border-radius: .5rem;
     justify-self: center;
@@ -456,7 +499,7 @@ img {
 .about_buttons {
     display: flex;
     justify-content: center;
-}
+} */
 
 /*==================== SKILLS ====================*/
 .skill_container {
