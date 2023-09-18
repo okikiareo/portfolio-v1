@@ -463,6 +463,7 @@ img {
   }
   .resume {
       margin-top: 2rem;
+      margin-bottom: 2rem;
     display: flex !important;
     justify-content: center !important;
 }
@@ -470,7 +471,7 @@ img {
 
 
 /*==================== SKILLS ====================*/
-.skill_container {
+/* .skill_container {
     row-gap: 0;
 }
 
@@ -526,7 +527,7 @@ img {
 
 .skills-check {
     font-size: 2rem;
-}
+} */
 
 
 /*==================== SERVICES ====================*/
