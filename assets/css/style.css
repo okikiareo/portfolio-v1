@@ -708,6 +708,144 @@ img {
     display: flex;
 }
 
+.work {
+    display: grid;
+    margin-bottom: 200px;
+    grid-template-columns: 70% 30%;
+    position: relative;
+  }
+  .work-img{
+    position: relative;
+  }
+  .w-image {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     border-radius: 10px;
+     position: relative;
+     z-index: -2;
+  } 
+  .img-figure-2::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #8de4ee;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    opacity: .3;
+    transition: opacity ease-in-out .2s;
+  }
+  .img-figure-2:hover::before {
+    opacity: 0;
+  }
+  .switch .work-img::before{
+    bottom: -18px;
+    left: 18px;
+  }
+  .switch .work-img::after{
+    bottom: -20px;
+    left: 20px;
+  }
+  .switch .work-img:hover::before{
+    bottom: -12px;
+    left: 12px;
+  }
+  .switch .work-img:hover::after{
+    bottom: -14px;
+    left: 14px;
+  }
+  .work-img::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #171717;
+    bottom: -18px;
+    left: -18px;
+    z-index: -3;
+    border-radius: 3px;
+    transition: all ease-in-out .3s;
+  }
+  .work-img::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #6DECB9;
+    opacity: .3;
+    bottom: -20px;
+    left: -20px;
+    z-index: -30;
+    border-radius: 3px;
+    transition: all ease-in-out .3s;
+  }
+  .work-img:hover::before {
+    bottom: -12px;
+    left: -12px;
+  
+  } 
+  .work-img:hover::after {
+    bottom: -14px;
+    left: -14px;
+  
+  } 
+  .info{
+    margin-top: 20px;
+    color: #B2B1B9;
+  } 
+  .info h3 {
+    text-align: right;
+  }
+  .switch {
+    grid-template-columns: 30% 70%;
+  }
+   .switch div:nth-child(1) {   
+     order: 1; 
+  }
+  .switch .info h3 {
+  text-align: left;
+  }
+  
+  .desc {
+    background: #1a1a1a;
+    position: relative;
+    width: 120%;
+    top: 30%;
+    transform: translateY(-50%);
+    right: calc(20% + 40px);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px #171717;
+    
+  } 
+  .switch .desc {
+    left: 0;
+  }
+  
+  .icons-work {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 6%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .switch .icons-work {
+    left: 0;
+  }
+  .icon-work {
+   width: 18px;
+   margin-bottom: 0;
+  
+   transition: color ease-in-out .2s;
+   
+  }
+  .icon-work:hover {
+    color: #6DECB9;
+  }
 
 /*==================== PROJECT IN MIND ====================*/
 .project {
