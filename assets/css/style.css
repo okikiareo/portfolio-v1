@@ -632,7 +632,7 @@ img {
 /*==================== PORTFOLIO ====================*/
 .portfolio_container {
     overflow: initial;
-    
+    /* width: 80%; */
 
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
@@ -641,6 +641,22 @@ img {
 .portfolio h2{
     margin-bottom: 1.5rem;
 }
+
+/* Testing */
+
+.test{
+    display: flex ;
+    justify-content: center !important;
+    flex-direction: column;
+}
+.swiper-wrapper{
+    width: 100%;
+}
+
+.work{
+    width: 80% ;
+}
+/* testing */
 
 /* .works {
     width: 70%;

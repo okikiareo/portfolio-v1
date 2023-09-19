@@ -428,15 +428,18 @@
 }
 
 /* Special queries */
+@media (min-width: 1000px){
+  .portfolio_container {
+    /* width: 80% !important; */
+    
+  }
+}
 @media (max-width:1040px) and (min-width:850px) {
     .info h3 {
         font-size: 15px;
       }
       .desc{
         font-size: 13px;
-      }
-      .works {
-        width: 75%;
       }
 }
 
@@ -484,22 +487,6 @@
         left: -10px;
       
       } 
-      /* .switch .work-img::before{
-        bottom: -12px;
-        left: 12px;
-      }
-      .switch .work-img::after{
-        bottom: -14px;
-        left: 14px;
-      }
-      .switch .work-img:hover::before{
-        bottom: -8px;
-        left: 8px;
-      }
-      .switch .work-img:hover::after{
-        bottom: -10px;
-        left: 10px;
-      } */
       .icon-work{
         width: 15px ;
       }
@@ -508,9 +495,6 @@
         margin: 0;
         position: relative;
       }
-      /* .switch .icons-work {
-        margin: 0;
-      } */
       .icon-name {
         display: flex;
         width: 100%;
@@ -546,4 +530,93 @@
 
 @media (max-width: 600px) and (min-width: 0px) {
 
+}
+
+@media (max-width: 499px) and (min-width: 340px) {
+
+    .work-img::before{
+        bottom: -10px;
+        left: -10px;
+      }
+      .work-img::after{
+        bottom: -12px;
+        left: -12px;
+      }
+      .work-img:hover::before {
+        bottom: -6px;
+        left: -6px;
+      
+      } 
+      .work-img:hover::after {
+        bottom: -8px;
+        left: -8px;
+      
+      } 
+      .w-image {
+        height: 200px;
+      }
+      .works {
+        width: 75%;
+      }
+      .works h1 {
+        font-size: 20px;
+      }
+      .info h3 {
+        font-size: 13px;
+      }
+      .desc{
+        font-size: 12px;
+        line-height: 22px;
+      }
+      .icon-work{
+        width: 12px;
+      }
+      .icons-work {
+        width: 11%;
+      }
+}
+
+@media (max-width: 339px) and (min-width: 270px) {
+
+    .work-img::before{
+        bottom: -10px;
+        left: -10px;
+      }
+      .work-img::after{
+        bottom: -12px;
+        left: -12px;
+      }
+      .work-img:hover::before {
+        bottom: -6px;
+        left: -6px;
+      
+      } 
+      .work-img:hover::after {
+        bottom: -8px;
+        left: -8px;
+      
+      } 
+      .w-image {
+        height: 200px;
+      }
+      .works {
+        width: 75%;
+      }
+      .works h1 {
+        font-size: 18px;
+      }
+      .info h3 {
+        font-size: 11px;
+      }
+      .desc{
+        font-size: 10px;
+        line-height: 18px;
+        padding: 13px;
+      }
+      .icon-work{
+        width: 11px;
+      }
+      .icons-work {
+        width: 12%;
+      }
 }
