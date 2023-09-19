@@ -639,23 +639,12 @@ img {
 }
 
 .portfolio h2{
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 /* Testing */
 
-.test{
-    display: flex ;
-    justify-content: center !important;
-    flex-direction: column;
-}
-.swiper-wrapper{
-    width: 100%;
-}
 
-.work{
-    width: 80% ;
-}
 /* testing */
 
 /* .works {
@@ -863,10 +852,9 @@ img {
   }
   .icon-work {
    width: 18px;
+   color:#000;
    margin-bottom: 0;
-  
    transition: color ease-in-out .2s;
-   
   }
   .icon-work:hover {
     color: #6DECB9;
