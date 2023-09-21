@@ -429,21 +429,17 @@
 
 /* Special queries */
 @media (min-width: 1000px){
-  .portfolio_container{
-    display: flex ;
-    justify-content: center;
-    flex-direction: column;
+ 
+.swiper-wrapper {
+  display: flex !important;
+  justify-content: center ;
 }
-.swiper-wrapper{
-    display: flex;
-    justify-content: center;
-}
-
-.work{
+.mySlides{
     width: 80% ;
 }
+
 .icons-work {
-  width: 7%;
+  width: 6%;
 }
 .icon-work {
   width: 22px;

@@ -590,7 +590,7 @@ img {
 
 /* testing */
 
-
+ 
 .work {
     display: grid;
     margin-bottom: 200px;
@@ -728,7 +728,7 @@ img {
   .icon-work:hover {
     color: var(--gray);
   }
-
+/* 
   .swiper-button-prev::after,
   .swiper-button-next::after{
       content: "";
@@ -760,7 +760,7 @@ img {
   .swiper-pagination-bullet {
       outline: none;
   }
-  
+   */
 
 /*==================== PROJECT IN MIND ====================*/
 .project {
