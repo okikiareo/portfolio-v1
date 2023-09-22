@@ -6,7 +6,7 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  /* max-width: 1000px; */
+  max-width: 1000px;
   position: absolute;
   margin: auto;
 }
@@ -21,7 +21,7 @@ img {vertical-align: middle;}
   margin-top: -22px;
   color: #000;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 25px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -86,6 +86,45 @@ img {vertical-align: middle;}
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+@media only screen and (max-width: 400px) {
+  .prev, .next,.text {font-size: 15px}
+}
+
+.swiper-wrapper{
+  position: absolute;
+}
+ .move{
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+ } 
+ @media(min-width: 1000px){
+   .move{
+     margin: 15% 3rem ;
+   }
+ } 
+ @media(min-width: 700px) and (max-width:999px){
+  .move{
+    margin: 20% .8rem ;
+  }
+} 
+@media(max-width: 699px) and (min-width:400px){
+  .move{
+    margin: 30% .2rem ;
+  }
+}
+@media(max-width: 499px) and (min-width:200px){
+  .move{
+    margin: 30% .2rem ;
+  }
+}
+@media(max-width: 350px){
+  .move{
+    margin: 45% .1rem 0 .7rem ;
+  }
+}
+@media(max-width: 250px){
+  .move{
+    margin: 30% 0 0 .9rem ;
+  }
 }

@@ -586,11 +586,14 @@ img {
 }
 
 /* Testing */
-
+.swiper-wrapper {
+    display: flex !important;
+    justify-content: center ;
+  }
 
 /* testing */
 
- 
+
 .work {
     display: grid;
     margin-bottom: 200px;
