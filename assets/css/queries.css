@@ -135,7 +135,6 @@
 
     /* ABOUT, PORTFOLIO, PROJECT, AND FOOTER SECTIONS STYINGS */
     .about_container,
-    /* .portfolio_content, */
     .project_container,
     .footer_container {
         grid-template-columns: repeat(2, 1fr);
@@ -303,15 +302,6 @@
         width: 450px;
     }
 
-    /* PORTFOLIO SECTION */
-    /* .portfolio_img {
-        width: 320px;
-    }
-
-    .portfolio_content {
-        align-items: center;
-    } */
-
     /* PROJECT IN MIND SECTION */
     .project {
         text-align: initial;
@@ -388,13 +378,6 @@
         column-gap: 2rem;
     }
 
-    /* PORTFOLIO SECTION */
-    /* .portfolio_content {
-        column-gap: 5rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    } */
-
     /* SWIPER STYLINGS */
     .swiper-portfolio-icon {
         font-size: 3.5rem;
@@ -429,61 +412,15 @@
 
 /* Special queries */
 /* Testing */
-@media(max-width: 999px) and (min-width:500px){
-  .mySlides{
-    width: 85% ;
+@media(max-width: 350px){
+  .portfolio h2{
+    margin-bottom: 1rem;
+}
+  .move{  
+  margin-bottom: 1rem;
+  gap: 2rem;
 }
 }
-
-@media(max-width: 499px) and (min-width:450px){
-  .portfolio_container{
-  margin-left: 3rem ;
-  }
-  .mySlides{
-    width: 100% ;
-}
-}
-@media(max-width: 449px) and (min-width:400px){
-  .mySlides{
-    width: 100% ;
-}
-.portfolio_container{
-  margin-left: 3rem ;
-  }
-}
-@media(max-width: 419px) and (min-width:350px){
-  .mySlides{
-    width: 100% ;
-}
-.portfolio_container{
-  margin-left: 1rem ;
-  }
-}
-@media(max-width: 349px) and (min-width:300px){
-  .mySlides{
-    width: 100% ;
-}
-.portfolio_container{
-  margin-left: .5rem ;
-  }
-}
-@media(max-width: 299px) and (min-width:200px){
-  .mySlides{
-    width: 95%;
-}
-.portfolio_container{
-  margin-left: .5rem ;
-  }
-}
-@media(max-width: 199px) and (min-width:50px){
-  .mySlides{
-    width:100%;
-}
-.portfolio_container{
-  margin-left: .46rem ;
-  }
-}
-
 
 /* Testing */
 @media (min-width: 1000px){
@@ -525,9 +462,6 @@
   .desc{
     font-size: 13px;
   }
-  /* .works {
-    width: 75%;
-  } */
 }
 
 @media (max-width: 749px) and (min-width:0px){
