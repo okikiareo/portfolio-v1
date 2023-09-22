@@ -17,7 +17,7 @@ img {vertical-align: middle;}
   position: relative;
   top: 50%;
   width: auto;
-  padding: 16px;
+  padding: .2rem .5rem;
   margin-top: -22px;
   color: #000;
   font-weight: bold;
@@ -89,7 +89,14 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 400px) {
   .prev, .next,.text {font-size: 15px}
 }
-
+@media only screen and (max-width: 550px) {
+  .prev, .next,.text {font-size: 17px}
+}
+@media(max-width: 400px){
+  .prev, .next {
+    padding: .1rem .2rem;
+}
+}
 .swiper-wrapper{
   position: absolute;
 }
@@ -125,11 +132,11 @@ img {vertical-align: middle;}
 }
 @media(max-width: 299px) and (min-width:200px){
   .move{
-    margin: 40% 0 0 .2rem ;
+    margin: 45% 0 0 .2rem ;
   }
 }
-@media(max-width: 280px){
+/* @media(max-width: 280px){
   .move{
-    /* margin: 40% 0 0 .9rem ; */
+    margin: 40% 0 0 .9rem ;
   }
-}
+} */
