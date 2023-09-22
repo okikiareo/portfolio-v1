@@ -442,12 +442,13 @@
   .mySlides{
     width: 100% ;
 }
+}
 @media(max-width: 449px) and (min-width:400px){
   .mySlides{
     width: 100% ;
 }
 .portfolio_container{
-  margin-left: 33rem ;
+  margin-left: 3rem ;
   }
 }
 @media(max-width: 419px) and (min-width:350px){
@@ -460,21 +461,30 @@
 }
 @media(max-width: 349px) and (min-width:300px){
   .mySlides{
-    width: 90% ;
+    width: 100% ;
 }
+.portfolio_container{
+  margin-left: .5rem ;
+  }
 }
-@media(max-width: 299px) and (min-width:150px){
+@media(max-width: 299px) and (min-width:200px){
   .mySlides{
-    width: 100%;
+    width: 95%;
 }
+.portfolio_container{
+  margin-left: .5rem ;
+  }
 }
-/* @media(max-width: 299px) and (min-width:150px){
+@media(max-width: 199px) and (min-width:50px){
   .mySlides{
-    width:  ;
+    width:100%;
 }
-} */
+.portfolio_container{
+  margin-left: .46rem ;
+  }
+}
 
-}
+
 /* Testing */
 @media (min-width: 1000px){
  

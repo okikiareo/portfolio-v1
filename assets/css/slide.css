@@ -120,11 +120,16 @@ img {vertical-align: middle;}
 }
 @media(max-width: 350px){
   .move{
-    margin: 45% .1rem 0 .7rem ;
+    margin: 40% .1rem 0 .2rem ;
   }
 }
-@media(max-width: 250px){
+@media(max-width: 299px) and (min-width:200px){
   .move{
-    margin: 30% 0 0 .9rem ;
+    margin: 40% 0 0 .2rem ;
+  }
+}
+@media(max-width: 280px){
+  .move{
+    /* margin: 40% 0 0 .9rem ; */
   }
 }
