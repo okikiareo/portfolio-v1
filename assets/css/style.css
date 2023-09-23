@@ -740,6 +740,35 @@ justify-content: center ;
     color: var(--gray);
   }
 
+
+
+  .viewmore {
+    text-align: center;
+    margin: -100px 0 200px;
+  }
+  .viewmore a {
+    color: #000;
+    font-size: 13px;
+    transition: all ease-in-out .3s;
+    
+  }
+  .viewmore a:hover {
+    color: #171717;
+  }
+  .btn {
+    padding: 10px 40px;
+    background: none;
+    color: #fff;
+    border: 1px solid var(--grayhover);
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background ease-in-out .3s;
+  }
+  .btn:hover {
+    background: #e2e2e2;
+    
+    border: 1px solid #e2e2e2;
+  }  
 /*==================== PROJECT IN MIND ====================*/
 .project {
     text-align: center;
