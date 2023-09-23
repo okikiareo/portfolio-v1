@@ -178,9 +178,12 @@
     body {
         margin: 0;
     }
-
     .section {
         padding: 6rem 0 2rem;
+    }
+    .contact{
+      padding: 3rem 0 2rem;
+    
     }
 .portfolio{
     padding: 2.4rem 0 4rem;
@@ -300,31 +303,6 @@
 
     .services_modal-content {
         width: 450px;
-    }
-
-    /* PROJECT IN MIND SECTION */
-    .project {
-        text-align: initial;
-    }
-
-    .project_bg {
-        background: none;
-    }
-
-    .project_container {
-        background-color: var(--first-color-second);
-        border-radius: 1rem;
-        padding: 3rem 2.5rem 2rem;
-        grid-template-columns: 1fr max-content;
-        column-gap: 3rem;
-    }
-
-    .project_data {
-        padding-top: 2rem;
-    }
-
-    .project_title {
-        font-size: var(--h1-font-size);
     }
 
     /* FOOTER SECTION */
@@ -532,10 +510,29 @@
       }
 }
 
-@media (max-width: 600px) and (min-width: 0px) {
-
+@media (max-width: 500px){
+ 
+  .resume .mail-btn{
+    padding: .3rem .7rem;
+    border-radius: .5rem;
+    /* font-size: .8rem; */
+    font-weight: var(--font-medium);
 }
-
+.button_icon {
+  font-size: 1rem;
+}
+.contact_container p{
+  font-size: .8rem;
+  }
+}
+@media(max-width: 350px){
+  .home_title {
+    font-size: 1.8rem;
+      }
+      .box{
+        font-size: .8rem;
+      }
+}
 @media (max-width: 499px) and (min-width: 340px) {
 
     .work-img::before{
@@ -644,9 +641,24 @@
   .btn {
     padding: 5px 30px;
 }
+.middle{
+  width: 95%;
+}
+.technologies{
+  width: 80%;
+}
+.vertical-line {
+  /* width: 10%; */
+  margin-right: 10px;
+}
 }
 @media(min-width: 749px){
   .viewmore{
     margin-top: -11rem;
+  }
+}
+@media(min-width: 870px) and (max-width:1023px){
+  .contain{
+    max-width: 868px;
   }
 }

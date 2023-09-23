@@ -32,7 +32,7 @@
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1.125rem;
-    --normal-font-size: .938rem;
+    --normal-font-size: .9rem;
     --small-font-size: .813rem;
     --smaller-font-size: .75rem;
 
@@ -768,44 +768,15 @@ justify-content: center ;
     background: #e2e2e2;
     border: 1px solid #e2e2e2;
   }  
-/*==================== PROJECT IN MIND ====================*/
-.project {
-    text-align: center;
-}
-
-.project_bg {
-    background-color: var(--first-color-second);
-    padding-top: 3rem;
-}
-
-.project_title {
-    font-size: var(--h2-font-size);
-    margin-bottom: var(--mb-0-75);
-}
- .project_description {
-     margin-bottom: var(--mb-1-5);
- }
-
-.project_title,
-.project_description {
-    color: #fff;
-}
-
-.project_img {
-    width: 232px;
-    justify-self: center;
-}
-
-.project_container {
-    padding-bottom: 2.5rem;
-}
-
 
 /*==================== CONTACT ME ====================*/
 .contact_container {
     row-gap: 3 rem;
+    margin-top: 1rem;
 }
-
+.contact_container p{
+text-align:center ;
+}
 .contact_information {
     display: flex;
     margin-bottom: var(--mb-2);
@@ -825,8 +796,17 @@ justify-content: center ;
 .contact_subtitle > a {
     font-size: var(--small-font-size);
     color: var(--text-color-light);
+ }
+.resume .mail-btn{
+        background-color: var(--first-color);
+        color: #FFF;
+        padding: .6rem 1.2rem;
+        border-radius: .5rem;
+        font-weight: var(--font-medium);
 }
-
+.mail-btn:hover {
+    background-color: var(--first-color-alt);
+}
 /*==================== FOOTER ====================*/
 .footer {
     padding-top: 2rem;
