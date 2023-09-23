@@ -8,7 +8,7 @@ img {vertical-align: middle;}
 .prev, .next {
   cursor: pointer;
   position: relative;
-  padding: .3rem .8rem;
+  padding: .3rem 1rem;
   border-radius: 5px;
   color: #fff;
   background-color: #646464;
