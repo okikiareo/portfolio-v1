@@ -399,6 +399,9 @@
   margin-bottom: 1rem;
   gap: 2rem;
 }
+.nav_logo {
+  font-size: 1rem;
+}
 }
 
 /* Testing */
@@ -663,6 +666,9 @@
   .footer_social {
     font-size: 1.5rem;
     padding:0 5rem;
+  }
+  .footer_copy{
+    font-size: .9rem;
   }
 }
 @media(min-width: 870px) and (max-width:1023px){

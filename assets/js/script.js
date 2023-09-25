@@ -1,3 +1,30 @@
+/*=== MENU SHOW Y HIDDEN ===*/
+const navMenu = document.querySelector("#nav-menu");
+const navToggle = document.querySelector("#nav-toggle");
+const navClose = document.querySelector("#nav-close");
+const main = document.querySelector(".main")
+const footer = document.querySelector(".footer");
+
+/*=== MENU SHOW ===*/
+
+if(navToggle) {
+    navToggle.addEventListener("click", () => {
+        navMenu.style.bottom = "0"
+    })
+
+/*== MENU HIDDEN ==*/
+
+if(navClose) {
+  navClose.addEventListener("click", () => {
+      navMenu.style.bottom = "-100%"
+  })
+}
+
+}
+
+
+
+
 // let slideIndex = 1;
 // showSlides(slideIndex);
 
