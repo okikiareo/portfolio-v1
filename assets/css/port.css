@@ -1,5 +1,5 @@
-.mainn h2{
-    margin: 4rem 2rem;
+.mainn {
+    margin: 5rem 2rem;
 }
 
 .new-nav {padding: 30px 25px 0px;}
@@ -78,8 +78,8 @@
 }
 /* Queries */
 @media(max-width: 768px){
-    .mainn h2{
-    margin: 1rem 2rem;
+    .mainn {
+    margin: 2rem 2rem;
 }
 
 }
