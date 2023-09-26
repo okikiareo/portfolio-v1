@@ -14,6 +14,7 @@
     --vert-line: #383838;
     --blk: #1a1a1a;
     --desc: #c6c5ce;
+    --so-hv: rgb(233, 233, 233);
     /* --view: #fff; */
     /*Purple 250 - Green 142 - Blue 230 - Pink 340 - Brown 24*/
 
@@ -26,7 +27,7 @@
     --text-color: hsl(var(--hue-color), 8%, 45%);
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
     --input-color: hsl(var(--hue-color), 70%, 96%);
-    --body-color: hsl(var(--hue-color), 60%, 99%);
+    --body-color:var(--btn-txt);
     --container-color: #FFF;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
@@ -77,6 +78,7 @@ body.dark-theme {
     --vert-line: var(--wht);
     --blk: #fff;
     --desc: #000;
+    --so-hv: hsl(248, 20%, 44%);
    /*  --grayhover:#575A6B; */
    --first-color: var(--gray);
     --first-color-second: hsl(var(--hue-color), 30%, 8%);
@@ -615,7 +617,7 @@ justify-content: center ;
   } 
   .info{
     margin-top: 20px;
-    color: #B2B1B9;
+    /* color: #B2B1B9; */
   } 
   .info h3 {
     text-align: right;
@@ -776,7 +778,7 @@ text-align:center ;
 }
 
 .footer_social:hover {
-    color: rgb(233, 233, 233);
+    color: var(--so-hv);
 }
 
 .footer_copy {
@@ -785,14 +787,14 @@ text-align:center ;
     color: var(--text-color-light);
     padding-top: 2rem;
     padding-bottom: 2rem;
-    color: #fff;
+    color: var(--btn-txt);
 }
 
 .footer_title,
 .footer_subtitle,
 .footer_link,
 .footer_social {
-    color: #FFF;
+    color: var(--btn-txt);
 }
 
 
