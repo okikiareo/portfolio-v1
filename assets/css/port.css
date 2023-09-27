@@ -36,13 +36,13 @@
   position: absolute;
   bottom: 0;
   color: #000;
-  background: linear-gradient(0deg, #8de4ee 0%, #ffffff00 104.29%);
+  background: linear-gradient(0deg, #535353a9 0%, #ffffff00 104.29%);
 }
 .work-title {
   font-size: 20px;
   font-weight: 700;
   padding-left: 10px;
-  color: #262626;
+  color: #000000;
 
 }
 .techs {
@@ -67,8 +67,9 @@
   width: 100%;
   padding-top: 20px;
 }
-.icon-2{
-  width: 17px;
+.icon-2 i{
+  font-size: 1.5rem;
+  color: #fff;
   padding-right: 20px;
 }
 
