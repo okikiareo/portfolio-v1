@@ -42,7 +42,7 @@
   font-size: 20px;
   font-weight: 700;
   padding-left: 10px;
-  color: #000000;
+  color: #fff;
 
 }
 .techs {
@@ -116,6 +116,16 @@
 }
 .mainn {
     margin: 2rem 1rem;
+}
+.work-title{
+  font-size: 1rem;
+}
+.techs{
+  width: 120px;
+  margin: 0 0 10px;
+}
+.title-icon{
+  margin-bottom: 5px;
 }
 }
 @media (max-width: 320px){
