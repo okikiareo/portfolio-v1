@@ -82,7 +82,8 @@
                         </div>
                         </div>
                         <div class="home_data">
-                            <h1 class="home_title">Hi, I'm Okiki</h1>
+                            <h1 class="home_title"> <span class="auto-type"></span></h1>
+                            <!-- <h1 class="home_title"> Hi, I'm Okiki</h1> -->
                             <h3 class="home_subtitle">A Frontend Developer</h3>
                             <p class="home_description">
                                 I create visual appealing and user-friendly websites & webapps,
@@ -545,5 +546,13 @@
         <script>
             AOS.init();
           </script>
-       
+       <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+       <script>
+         var typed = new Typed('.auto-type', {
+      strings: ["Hi, I'm OKiki", 'Web3 is here'],
+      typeSpeed: 150,
+      backspeed: 150,
+      loop: true
+    });
+       </script>
 </html>
