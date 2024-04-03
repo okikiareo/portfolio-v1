@@ -72,7 +72,7 @@ body.dark-theme {
     /* --gray: #e1dcd9; */
     --gray: #fff;
     --wht: #fff;
-    --dark: hsl(250, 34%, 21%);
+    --dark: hsl(250, 64%, 9%);
     --btn-txt: var(--dark);
     --btn-bck: var(--wht);
     --vert-line: var(--wht);

@@ -348,7 +348,8 @@
     }
 
     .home_social {
-        transform: translateX(-6rem);
+        /* transform: translateX(-6rem) !important; */
+        margin-left: -6rem;
     }
 
     /* SERVICES SECTION */
