@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
+#particles-js{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+.home{
+    position: absolute;
+}
 /*==================== VARIABLES CSS ====================*/
 :root {
     --header-height: 3rem;
@@ -239,7 +247,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: var(--small-font-size);
+    font-size: var(--normal-font-size);
     color: var(--text-color);
 }
 

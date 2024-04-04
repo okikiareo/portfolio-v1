@@ -13,7 +13,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Okiki - Areo</title>
 </head>
-<body>
+<body >
      <!--==== HEADER =====-->
      <header class="header" id="header">
         <nav class="nav container">
@@ -59,8 +59,10 @@
         </header>
         <main class="main">
  <!--====== HOME =====-->
-            <section class="home section border-bottom" id="home">
-                <div class="home_container container grid">
+ <section id="particles-js" class="border-bottom">
+
+            <section class="home section " id="home" >
+                <div class="home_container container grid" >
                     <div class="home_content grid">
                         <div class="home_social" data-aos="fade-up" data-aos-duration="1500">
                             <a href="https://www.linkedin.com/in/okiki-areo/" class="home_social-icon" target="_blank">
@@ -104,6 +106,7 @@
                     </div>
                 </div>
             </section>
+ </section>
   <!--==================== ABOUT ====================-->
   <section class="about border-bottom" id="about">
     <h2 class="section_title ">About Me</h2>
@@ -543,9 +546,7 @@
 </body>
         <script src="./assets/js/script.js"></script> 
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-          </script>
+       
        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
        <script>
          var typed = new Typed('.auto-type', {
@@ -555,4 +556,9 @@
       loop: true
     });
        </script>
+        <script>
+            AOS.init();
+          </script>
+       <script src="assets/js/particles.js"></script>
+       <script src="assets/js/animate.js"></script>
 </html>
