@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-#particles-js{
+
+/* #particles-js{
     position: relative;
     display: flex;
     justify-content: center;
@@ -7,7 +8,7 @@
 }
 .home{
     position: absolute;
-}
+} */
 /*==================== VARIABLES CSS ====================*/
 :root {
     --header-height: 3rem;
