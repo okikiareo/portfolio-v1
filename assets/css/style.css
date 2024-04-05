@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-/* #particles-js{
+#particles-js{
     position: relative;
     display: flex;
     justify-content: center;
@@ -8,7 +8,7 @@
 }
 .home{
     position: absolute;
-} */
+}
 /*==================== VARIABLES CSS ====================*/
 :root {
     --header-height: 3rem;
@@ -166,8 +166,31 @@ img {
 
 .section {
     padding: 2rem 0 4rem;
+    /* added */
+    overflow: hidden;
+}
+@media(min-width: 1020px){
+    .section {
+        overflow: initial;
+    }
 }
 
+@media(min-width: 349px){
+    .about {
+        margin-top: 8rem !important;
+    }
+}
+@media(min-width: 567px){
+    .about {
+        margin-top: 6rem !important;
+    }
+}
+@media(min-width: 967px){
+    .about {
+        margin-top: 8rem !important;
+    }
+}
+/* add */
 .section_title {
     font-size: var(--h1-font-size);
 }
