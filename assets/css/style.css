@@ -177,11 +177,6 @@ img {
 
 @media(min-width: 349px){
     .about {
-        margin-top: 8rem !important;
-    }
-}
-@media(min-width: 567px){
-    .about {
         margin-top: 6rem !important;
     }
 }
