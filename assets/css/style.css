@@ -530,7 +530,8 @@ img {
 
 
 /*==================== PORTFOLIO ====================*/
-.portfolio_container {
+.portfolio_container, 
+.webapp_container{
     overflow: initial;
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
@@ -539,6 +540,14 @@ img {
 .portfolio h2{
     margin-bottom: 2rem;
 }
+.webapp h2{
+    margin-bottom: 2rem;
+}
+.webtype{
+font-size: 1.2rem;
+text-align: center;
+margin-bottom: 1.5rem;
+} 
 
 /* Testing */
 .swiper-wrapper {
@@ -551,7 +560,8 @@ img {
     margin-bottom: 1.5rem;
     gap: 3rem;
 }
-.portfolio_container {
+.portfolio_container,
+.webapp_container{
 display: flex;
 flex-direction: column;
 justify-content: center ;

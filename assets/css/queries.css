@@ -393,7 +393,8 @@
 /* Special queries */
 /* Testing */
 @media(max-width: 350px){
-  .portfolio h2{
+  .portfolio,
+  .webapp h2{
     margin-bottom: 1rem;
 }
   .move{  
@@ -413,7 +414,8 @@
   justify-content: center ;
 }
 
-.mySlides{
+.mySlides,
+.webapp-mySlides {
     width: 80% ;
 }
 
