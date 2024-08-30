@@ -61,58 +61,128 @@ function scrollActive(){
         }
     })
 }
-window.addEventListener('scroll', scrollActive)
-let slideIndex = 1;
-let slideTimer;
 
-showSlides(slideIndex);
 
-function plusSlides(n) {
-  pauseTimer(); // Pause the timer when the user clicks next or previous
-  showSlides(slideIndex += n);
-}
+// Slider 1 - Webapp Slider
+let slideIndexWebapp = 1;
+let timerWebapp;
 
-function currentSlide(n) {
-  pauseTimer(); // Pause the timer when the user interacts with the carousel
-  showSlides(slideIndex = n);
-}
+function showSlidesWebapp(n) {
+  const slides = document.getElementsByClassName("webapp-mySlides");
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) { slideIndex = 1 }
-  if (n < 1) { slideIndex = slides.length }
-  for (i = 0; i < slides.length; i++) {
+  if (n > slides.length) { slideIndexWebapp = 1; }
+  if (n < 1) { slideIndexWebapp = slides.length; }
+
+  for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  slides[slideIndex - 1].style.display = "block";
-  
-  restartTimer(); // Restart the timer after showing the slide
+
+  slides[slideIndexWebapp - 1].style.display = "block";
 }
 
-// Add a timer that advances the slides every 2 seconds (2000 milliseconds)
-function startTimer() {
-  slideTimer = setInterval(function() {
-    plusSlides(1); // Advance to the next slide
-  }, 4000);
+function plusSlidesWebapp(n) {
+  pauseTimerWebapp();
+  slideIndexWebapp += n;
+  showSlidesWebapp(slideIndexWebapp);
+  restartTimerWebapp();
 }
 
-// Pause the timer
-function pauseTimer() {
-  clearInterval(slideTimer);
+function startTimerWebapp() {
+  timerWebapp = setInterval(function() {
+    plusSlidesWebapp(1);
+  }, 4000); // 4 seconds interval
 }
 
-// Restart the timer
-function restartTimer() {
-  pauseTimer(); // Pause the timer if it's running
-  startTimer(); // Restart the timer
+function pauseTimerWebapp() {
+  clearInterval(timerWebapp);
 }
 
-// Add event listeners to stop and restart the timer when the user interacts with the carousel
-let carousel = document.getElementById("move"); // Replace with your carousel's HTML element ID
-carousel.addEventListener("mouseenter", pauseTimer);
-carousel.addEventListener("click", pauseTimer);
-carousel.addEventListener("mouseleave", restartTimer);
+function restartTimerWebapp() {
+  pauseTimerWebapp();
+  startTimerWebapp();
+}
+
+function setupEventListenersWebapp() {
+  const container = document.querySelector(".webapp_container");
+  const prevButton = container.querySelector(".prev-webapp");
+  const nextButton = container.querySelector(".next-webapp");
+
+  container.addEventListener("mouseenter", pauseTimerWebapp);
+  container.addEventListener("mouseleave", restartTimerWebapp);
+
+  if (prevButton) {
+    prevButton.addEventListener("click", () => plusSlidesWebapp(-1));
+  }
+  if (nextButton) {
+    nextButton.addEventListener("click", () => plusSlidesWebapp(1));
+  }
+}
+
+// Initialize Webapp Slider
+showSlidesWebapp(slideIndexWebapp);
+startTimerWebapp();
+setupEventListenersWebapp();
+
+// Slider 2 - Portfolio Slider
+let slideIndexPortfolio = 1;
+let timerPortfolio;
+
+function showSlidesPortfolio(n) {
+  const slides = document.getElementsByClassName("mySlides");
+
+  if (n > slides.length) { slideIndexPortfolio = 1; }
+  if (n < 1) { slideIndexPortfolio = slides.length; }
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slides[slideIndexPortfolio - 1].style.display = "block";
+}
+
+function plusSlidesPortfolio(n) {
+  pauseTimerPortfolio();
+  slideIndexPortfolio += n;
+  showSlidesPortfolio(slideIndexPortfolio);
+  restartTimerPortfolio();
+}
+
+function startTimerPortfolio() {
+  timerPortfolio = setInterval(function() {
+    plusSlidesPortfolio(1);
+  }, 6000); // 6 seconds interval
+}
+
+function pauseTimerPortfolio() {
+  clearInterval(timerPortfolio);
+}
+
+function restartTimerPortfolio() {
+  pauseTimerPortfolio();
+  startTimerPortfolio();
+}
+
+function setupEventListenersPortfolio() {
+  const container = document.querySelector(".portfolio_container");
+  const prevButton = container.querySelector(".prev");
+  const nextButton = container.querySelector(".next");
+
+  container.addEventListener("mouseenter", pauseTimerPortfolio);
+  container.addEventListener("mouseleave", restartTimerPortfolio);
+
+  if (prevButton) {
+    prevButton.addEventListener("click", () => plusSlidesPortfolio(-1));
+  }
+  if (nextButton) {
+    nextButton.addEventListener("click", () => plusSlidesPortfolio(1));
+  }
+}
+
+// Initialize Portfolio Slider
+showSlidesPortfolio(slideIndexPortfolio);
+startTimerPortfolio();
+setupEventListenersPortfolio();
+
 
 
 /*==================== DARK LIGHT THEME ====================*/ 
