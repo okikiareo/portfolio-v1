@@ -524,7 +524,7 @@
 @media (max-width: 500px){
  
   .resume .mail-btn{
-    padding: .3rem .7rem;
+    padding: .5rem .7rem;
     border-radius: .5rem;
     /* font-size: .8rem; */
     font-weight: var(--font-medium);
@@ -653,7 +653,7 @@
 }
 @media(max-width: 400px){
   .btn {
-    padding: 5px 30px;
+    padding: 9px 30px;
 }
 .middle{
   width: 95%;
